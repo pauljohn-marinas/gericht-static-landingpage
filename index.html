@@ -306,20 +306,46 @@
             <button class="custom__button text-center">View More</button>
         </div>
     </section>
-    <section class="gallery">
+    <section class="gallery p-relative">
+        <div class="container d-flex">
+            <div class="gallery__content__wrapper">
+                <h3 class="gallery__sub-heading">Instagram</h3>
+                <img class="icon-spoon" src="./images/spoon-icon.png" alt="">
+                <h2 class="gallery-heading">Photo Gallery</h2>
+                <p class="gallery-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem rerum fugiat sint tenetur repellat earum dolor laboriosam quis nihil corporis.</p>
+                <button class="custom__button">View More</button>
+            </div>
+            <div class="gallery__image__wrapper">
+                <ul class="gallery__list d-flex">
+                    <li class="gallery__item">
+                        <img src="./images/blog1.png" alt="">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="./images/blog2.png" alt="">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="./images/blog3.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
 
     </section>
-    <section class="subscribe">
+    <section class="subscribe p-relative">
+        <div class="design__element-subscribe p-absolute">
+            <img src="./images/design-element.png" alt="">
+        </div>
         <div class="container">
             <div class="subscribe__wrapper text-center">
                 <h3 class="subscribe__sub-heading">Newsletter</h3>
                 <img class="icon-spoon" src="./images/spoon-icon.png" alt="">
                 <h2 class="subscribe-heading">Subscribe To Our Newsletter</h2>
-                <p>And never miss latest Updates</p>
-            </div>
-            <div class="form__wrapper d-flex">
-                <input type="text" placeholder="Email Address">
-                <button class="custom__button">Subscribe</button>
+                <p>And never miss latest Updates!</p>
+                <div class="form__wrapper d-flex text-center">
+                    <input type="text" placeholder="Email Address">
+                    <button class="custom__button">Subscribe</button>
+                </div>
             </div>
         </div>
     </section>
@@ -337,7 +363,10 @@
                 <div class="footer__wrapper">
                     <h5 class="footer-logo">Gericht</h5>
                     <p>"The best way to find yourself is to lose yourself in the service of others."</p>
-                    <img class="icon-spoon" src="./images/spoon-icon.png" alt="">
+                    <div>
+                        <img class="icon-spoon" src="./images/spoon-icon.png" alt="">
+                    </div>
+                    
                     <ul class="footer-social d-flex">
                         <li>
                             <a href="#">
@@ -366,7 +395,7 @@
                     </ul>
                 </div>
            </div>
-            <p>2021 Gericht. All RIghts reserved.</p>
+            <p class="copyright">2021 Gericht. All RIghts reserved.</p>
         </div>
     </footer>
     <script src="./js/main.js" />
