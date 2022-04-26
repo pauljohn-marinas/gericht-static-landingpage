@@ -302,8 +302,74 @@ header{
 /* ================ Special Section ================= */
 .special{
     width: 100%;
-    height: 100em;
+    height: auto;
+    padding: 15em 0;
 }
+.special__sub-heading{
+    margin-bottom: .5em;
+}
+.special-heading{
+    margin-bottom: 1em;
+}
+.special__list-heading{
+    color: var(--white);
+    margin: 2em 0 1em 0;
+}
+.special__content__wrapper{
+    justify-content: space-between;
+    margin-bottom: 6em;
+}
+.list__wrapper{
+    margin-bottom: 3em;
+}
+.list__wrapper h5{
+    color: var(--dark-variant);
+    font-family: var(--font-headers);
+    font-size: 2em;
+}
+.list-detail{
+    display: block;
+    color: var(--dark-gray);
+    font-family: var(--font-content);
+    font-size: 1.4em;
+    text-align: left;
+}
+.list-price{
+    color: var(--white);
+    font-family: var(--font-headers);
+    font-size: 2em;
+}
+.list-divider{
+    background-color: var(--dark-gray);
+    width: 15em;
+    height: .1em;
+}
+.item__wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: .8em;
+}
+.content__wrapper-wine{
+    display: flex;
+    flex-direction: column;
+    flex: .4;
+}
+.content__wrapper-image{
+    display: flex;
+    flex-direction: column;
+    flex: .2;
+    margin: 0 4em;
+}
+
+.content__wrapper-cocktail{
+    display: flex;
+    flex-direction: column;
+    flex: .4;
+}
+
+
 /* ================ Team Section ================= */
 .team{
     background-image: url("../images/about-bg.jpg");
@@ -377,6 +443,31 @@ header{
     background-repeat: no-repeat;
     width: 100%;
     height:75em;
+}
+.video-button{
+    width: 10em;
+    height: 10em;
+    border: 1px solid var(--dark-variant);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+}
+.video-button::before{
+    content: '';
+     position: absolute;
+     top: 50%;
+     left: 60%;
+     width: 0;
+     height: 0;
+     transform: translate(-50%,-50%);
+     border: 1.4em solid transparent;
+     border-left: 1.4em solid var(--white);
+}
+.design__element-video{
+    top: 15em;
+    left: 20em;
 }
 /* ================ Awards Section ================= */
 .awards{
@@ -497,10 +588,6 @@ header{
     height:auto;
     padding: 15em 0;
 }
-.gallery__content__wrapper{
-    /* padding-right: 80em; */
-    
-}
 .gallery__sub-heading{
     margin-bottom: .5em;
     margin-top: 2.5em;
@@ -522,7 +609,7 @@ header{
     position: absolute;
 }
 .gallery__item{
-    margin: 0 1em;
+    margin: 0 .5em;
 }
 /* ================ Subscribe Section ================= */
 .subscribe{

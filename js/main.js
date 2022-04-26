@@ -47,4 +47,4 @@ function carousel(){
     // let b = setInterval(moveSecond, 10);
 }
 
-carousel();
+// carousel();
