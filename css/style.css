@@ -936,6 +936,76 @@ footer{
         bottom: 20em;
         right: 5em;
     }
+    .gallery{
+        padding: 10em 0;
+    }
+    .gallery__wrapper{
+        flex-direction: column;
+    }
+    .gallery__content__wrapper{
+        margin-bottom: 5em;
+    }
+    .gallery__sub-heading{
+        margin-top: 0;
+    }
+    .gallery-heading{
+        margin-bottom: .8em;
+    }
+    .gallery-content{
+        margin-bottom: 2em;
+    }
+    .gallery__image__wrapper{
+        position: relative;
+        overflow: hidden;
+        width: 200em;
+        height: 45em;
+        margin-right: -30em;
+    }
+    .gallery__list{
+        position: absolute;
+    }
+    .gallery__item{
+        margin: 0 .5em;
+    }
+    .subscribe{
+        padding: 10em 0;
+    }
+    .subscribe__wrapper p{
+        margin-bottom: 5em;
+    }
+    .form__wrapper{
+        justify-content: center;
+        padding:  0 5em;
+        flex-direction: column;
+    }
+    .form__wrapper input{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    .design__element-subscribe{
+        left: 5em;
+        top: -8em;
+    }
+    footer{
+        padding: 10em 0;
+    }
+    .footer__content__wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__wrapper:nth-child(1){
+        flex: 1;
+        margin-bottom: 2em;
+    }
+    .footer__wrapper:nth-child(2){
+        flex: 1;
+        order: 1;
+    }
+    .footer__wrapper:nth-child(3){
+        flex: 1;
+        margin-bottom: 3em;
+    }
 }
 /* ================ Responsive Design Medium Devices================= */
 @media screen and (max-width:768px) {
