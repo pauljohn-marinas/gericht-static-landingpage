@@ -29,6 +29,9 @@ html{
     font-family: var(--font-content);
     overflow-x:hidden;
 }
+body{
+    overflow-x:hidden;
+}
 a{
     text-decoration: none;
     color: var(--white);
@@ -774,7 +777,278 @@ footer{
 /* ========================================================================
 ========================== MEDIA QUERIES ===============================
 ======================================================================== */
-
+@media screen and (max-width:425px) {
+    .container{
+        width: var(--sm-container-width);
+    }
+    nav{
+        width: 100%;
+        padding: 2em 3em;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .login-links{
+        display: none;
+    }
+    .navbar__wrapper-sm{
+        display: block;
+    }
+    .header__content_wrapper{
+        display: block;
+    }
+    header{
+        height: auto;
+        padding-bottom: 5em;
+    }
+    .header__wrapper_info{
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 5em;
+    }
+    .header__wrapper_image{
+        width: 100%;
+    }
+    .header__sub-heading{
+        margin-top: 1em;
+    }
+    .header-h1{
+        font-size: 8em;
+        margin-bottom: .3em;
+    }
+    .header__wrapper_image{
+        text-align: center;
+    }
+    .header__wrapper_image img{
+        width: 100%;
+    }
+    .about{
+        padding: 10em 0;
+    }
+    .about__content_wrapper{
+        display: block;
+    }
+    .about__wrapper{
+        margin-bottom: 10em;
+    }
+    .knife__wrapper{
+        margin: 0;
+        text-align: center;
+    }
+    .about-heading{
+        padding-top: 0;
+    }
+    .history-heading{
+        padding-top: 1em;
+    }
+    .about-content,
+    .history-content{
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+    .reservations{
+        padding: 10em 0;
+    }
+    .reservation__select-options{
+        flex-direction: column;
+        padding: 0 5em;
+    }
+    .reservation__select-options .select__wrapper::after{
+        right: 4em;
+    }
+    .menu__wrapper{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }
+    .menu__wrapper h2:nth-child(3){
+        border-right: none;
+        border-left: none;
+        border-top: 3px solid rgba(170, 170, 170, 0.8);
+        border-bottom: 3px solid rgba(170, 170, 170, 0.8);
+    }
+    .menu-heading{
+        padding: .5em 1em;
+    }
+    .special{
+        padding: 10em 0;
+    }
+    .special__list-heading{
+        color: var(--white);
+        margin: 0 0 1em 0;
+    }
+    .special__content__wrapper{
+        flex-direction: column;
+    }
+    .content__wrapper-cocktail{
+        margin-top: 5em;
+    }
+    .team{
+        padding: 10em 0;
+    }
+    .team-heading{
+        margin-bottom: 1em;
+    }
+    .team-content{
+        margin-bottom: 3em;
+    }
+    .team__wrapper__content{
+        margin-left: 0;
+    }
+    .team__wrapper{
+        flex-direction: column;
+    }
+    .team__wrapper-image img{
+        width: 100%;
+    }
+    .design__element-team{
+        top:-18em;
+        right: 0;
+    }
+    .testimonials{
+        padding: 10em 0;
+    }
+    .testimonials__content-wrapper{
+        flex-direction: column;
+    }
+    .testimonials__wrapper{
+        width: 100%;
+    }
+    .testimonials-heading{
+        margin-bottom: 1em;
+    }
+    .testimonials__content{
+        padding: 0 0 0 2em;
+    }
+    .testimonials__content-wrapper > div:nth-child(4) .figure-title{
+        margin-bottom: 0;
+    }
+    .design__element-video{
+        top: 8em;
+        left: 8em;
+    }
+    .awards{
+        padding: 10em 0;
+    }
+    .awards__wrapper{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .awards__wrapper-image{
+        text-align: center;
+    }
+    .awards__wrapper-image img{
+        width: 80%;
+    }
+    .awards__wrapper-list{
+        margin-bottom: 3em;
+    }
+    .list__wrapper-content{
+        width: 100%;
+        margin-bottom: 3em;
+    }
+    .awards__sub-heading{
+        margin-top: 0;
+    }
+    .list__wrapper-content:nth-child(1){
+        margin-bottom: 3;
+    }
+    .g-light{
+        bottom: 0;
+        left: -3em;
+    }
+    .blogs{
+        padding: 10em 0;
+    }
+    .blog__post-detail{
+        margin-bottom: 2em;
+    }
+    .blog__wrapper-content{
+        width: 45%;
+        margin: 0 1em;
+    }
+    .blog-title{
+        margin-bottom: 1em;
+    }
+    .blog-readmore{
+        margin-bottom: 2em;
+    }
+    .design__element-blog {
+        bottom: 20em;
+        right: 5em;
+    }
+    .gallery{
+        padding: 10em 0;
+    }
+    .gallery__wrapper{
+        flex-direction: column;
+    }
+    .gallery__content__wrapper{
+        margin-bottom: 5em;
+    }
+    .gallery__sub-heading{
+        margin-top: 0;
+    }
+    .gallery-heading{
+        margin-bottom: .8em;
+    }
+    .gallery-content{
+        margin-bottom: 2em;
+    }
+    .gallery__image__wrapper{
+        position: relative;
+        overflow: hidden;
+        width: 200em;
+        height: 45em;
+        margin-right: -30em;
+    }
+    .gallery__list{
+        position: absolute;
+    }
+    .gallery__item{
+        margin: 0 .5em;
+    }
+    .subscribe{
+        padding: 10em 0;
+    }
+    .subscribe__wrapper p{
+        margin-bottom: 5em;
+    }
+    .form__wrapper{
+        justify-content: center;
+        padding:  0 5em;
+        flex-direction: column;
+    }
+    .form__wrapper input{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    .design__element-subscribe{
+        left: 5em;
+        top: -8em;
+    }
+    footer{
+        padding: 10em 0;
+    }
+    .footer__content__wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__wrapper:nth-child(1){
+        flex: 1;
+        margin-bottom: 2em;
+    }
+    .footer__wrapper:nth-child(2){
+        flex: 1;
+        order: 1;
+    }
+    .footer__wrapper:nth-child(3){
+        flex: 1;
+        margin-bottom: 3em;
+    }
+}
 /* ================ Responsive Design Small Devices================= */
 @media screen and (max-width:576px) {
     .container{
